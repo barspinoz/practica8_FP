@@ -4,6 +4,7 @@ int main() {
     int n = 0; // entrada
     int primero = 0;
     int segundo = 1;
+    int i = 0;
     int siguiente = 0; //salida
     
     printf("Ingrese n:\n");
@@ -16,7 +17,7 @@ int main() {
         siguiente = segundo;
     } else {
         //calcular desde el término 3 hasta el n
-        for (int i = 3; i <= n; i++) {
+        for (i = 3; i <= n; i++) {
             siguiente = primero + segundo;
             primero = segundo;
             segundo = siguiente;
