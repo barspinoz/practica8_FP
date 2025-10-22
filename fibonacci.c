@@ -16,10 +16,10 @@ int main() {
     }
     else { 
         if (n == 2) {
-        siguiente = segundo;
+            siguiente = segundo;
         }
         else {
-        //calcular desde el término 3 hasta el n
+            //calcular desde el término 3 hasta el n
             for (i = 3; i <= n; i++) {
                 siguiente = primero + segundo;
                 primero = segundo;
