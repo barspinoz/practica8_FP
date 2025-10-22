@@ -13,17 +13,20 @@ int main() {
     //casos especiales para los primeros dos terminos
     if (n == 1) {
         siguiente = primero;
-    } else if (n == 2) {
+    }
+    else { 
+        if (n == 2) {
         siguiente = segundo;
-    } else {
+        }
+        else {
         //calcular desde el término 3 hasta el n
-        for (i = 3; i <= n; i++) {
-            siguiente = primero + segundo;
-            primero = segundo;
-            segundo = siguiente;
+            for (i = 3; i <= n; i++) {
+                siguiente = primero + segundo;
+                primero = segundo;
+                segundo = siguiente;
+            }
         }
     }
-    
     printf("El termino %d de la secuencia de Fibonacci es: %d\n", n, siguiente);
     
     return 0;
